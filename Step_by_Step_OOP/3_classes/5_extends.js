@@ -31,3 +31,5 @@ class Student extends Person {
 let farnaz = new Student ("farnaz", 12, "Grade 1")
 farnaz.personReport()
 farnaz.studentReport()
+
+console.log (farnaz)
