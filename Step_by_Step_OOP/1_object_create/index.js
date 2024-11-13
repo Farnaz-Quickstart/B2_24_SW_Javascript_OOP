@@ -1,9 +1,14 @@
-
-const car = {
-  type: "fiat",
-  model: "500",
-  summery: function() {
-    return (this.type + ' ' + this.model)
+const person = {
+  name: "Tom",
+  age: 25,
+  walking: function() {
+    console.log ("walking")
+    return "This is a return value"
   }
 }
+
+console.log (person.walking())
+
+
+
 

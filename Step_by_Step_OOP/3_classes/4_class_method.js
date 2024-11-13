@@ -15,17 +15,20 @@ class Mobile {
 
   mobileInformation () {
     console.log (`This is mobile: ${this.brand}, model: ${this.model}, color: ${this.color}`)
+    return ("Mobile information")
   }
 
   make_call (number) {
     console.log ("call ${number}")
+    return ("make a call")
   }
 
   send_text (number, textMessage) {
     console.log ("Send  ${textMessage} to ${number}")
+    return ("send text")
   }
 }
 
 // Creating a new instance of the Mobile class, named mobile1.
 let mobile1 = new Mobile("iphone", "225", "orange")
-mobile1.mobileInformation()
+console.log (mobile1.mobileInformation())

@@ -6,8 +6,8 @@
 
 class Person {
   constructor(name, age, job) {
-    // Assign values
-    this.name = name
+    
+    this.name = name   // this` refers to the current object
     this.age = age
     this.job = job
     console.log ("This is class constructor ")

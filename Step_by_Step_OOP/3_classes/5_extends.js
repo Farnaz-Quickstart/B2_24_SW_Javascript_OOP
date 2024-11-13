@@ -1,35 +1,24 @@
-// Step1: Define a base or parent class
-class Person {
-  constructor (name, age) {
-    this.name = name
-    this.age = age
-    console.log ("this is a constructor")
+class Car {
+  constructor(brand, model, year) {
+    this.brand = brand;
+    this.model = model;
+    this.year = year;
   }
 
-  personReport() {
-    console.log ('This is a person Report')
+  getCarInfo () {
+    return (`${this.brand}, ${this.model}, ${this.year}`)
   }
 }
 
-// Step2: Define subclass using extends
-//        extends, create a new class based on an existing class, allowing the new class 
-//        to inherit all the properties and methods of the original class.
-//        Super: Is required in a subclass constructor to call the parent’s constructor.
-class Student extends Person {
-  constructor(name, age, grade) {
-    // Is required in a subclass constructor to call the parent’s constructor.
-    super (name, age)
-    this.grade = grade
+// Subclass: ElectricCar
+class ElectricCar extends Car {
+  constructor(brand, model, year, batteryCapacity) {
+    super(brand, model, year)
   }
-
-  studentReport() {
-    console.log ("This is a student report")
-  }
-
 }
 
-let farnaz = new Student ("farnaz", 12, "Grade 1")
-farnaz.personReport()
-farnaz.studentReport()
 
-console.log (farnaz)
+
+let car1 = new Car ("brand1", "model1", 2024)
+console.log (car1)
+console.log (Object.getPrototypeOf(car1)); 
