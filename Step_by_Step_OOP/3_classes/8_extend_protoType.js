@@ -27,3 +27,8 @@ class ElectricCar extends Car {
     return (`${this.model}, ${this.engineModel}`)
   }
 }
+
+let car1 = new Car ("B1", "M1", "2024")
+console.log (car1)
+let car2 = new ElectricCar ("B1", "M1", "2024","E1")
+console.log (car2)

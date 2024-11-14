@@ -6,19 +6,30 @@ class Car {
   }
 
   getCarInfo () {
-    return (`${this.brand}, ${this.model}, ${this.year}`)
+    return (`summary parent ${this.brand}, ${this.model}, ${this.year}`)
+  }
+
+  test () {
+    return "test"
   }
 }
 
-// Subclass: ElectricCar
+// Defining Sub class of Car Class
 class ElectricCar extends Car {
-  constructor(brand, model, year, batteryCapacity) {
-    super(brand, model, year)
+  constructor (brand, model, year, EnginePrower) {
+    super (brand, model, year)
+
+    this.EnginePrower = EnginePrower
+  }
+
+  getElectricCarInfo () {
+    return (`summary ${this.brand}, ${this.model}, ${this.year}, ${this.EnginePrower}`)
   }
 }
 
+let ElectricCar1 = new ElectricCar("EB1", "EM1", 2024, "EP1")
+console.log (ElectricCar1.getElectricCarInfo())
+console.log (ElectricCar1.test())
 
 
-let car1 = new Car ("brand1", "model1", 2024)
-console.log (car1)
-console.log (Object.getPrototypeOf(car1)); 
+
