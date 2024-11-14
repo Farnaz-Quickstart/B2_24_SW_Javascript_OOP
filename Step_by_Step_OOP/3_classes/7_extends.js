@@ -14,8 +14,18 @@ class Car {
   }
 }
 
+class Window  {
+  constructor (size) {
+    this.size = size
+  }
+
+  printWindow() {
+    return "summary Window"
+  }
+}
+
 // Defining Sub class of Car Class
-class ElectricCar extends Car {
+class ElectricCar extends Car  {
   constructor (brand, model, year, EnginePrower) {
     super (brand, model, year)
 

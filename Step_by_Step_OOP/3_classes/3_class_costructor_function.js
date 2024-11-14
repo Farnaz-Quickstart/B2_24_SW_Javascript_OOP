@@ -20,8 +20,11 @@ function Car2 (model,year) {
 Car2.prototype.displayInfo = function() {
   return "This is a return of method"
 }
-  let car2 = new Car2("MM", "YY")
-  console.log (car2.model)
+
+
+
+let car2 = new Car2("MM", "YY")
+console.log (car2.model)
 
 
 
